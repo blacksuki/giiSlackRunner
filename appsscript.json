@@ -1,0 +1,37 @@
+{
+  "timeZone": "Asia/Shanghai",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.metadata",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/script.locale",
+    "https://www.googleapis.com/auth/userinfo.profile",
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/script.scriptapp",
+    "https://www.googleapis.com/auth/script.storage",
+    "https://www.googleapis.com/auth/devstorage.read_write"
+  ],
+  "urlFetchWhitelist": [
+    "https://slack.com/",
+    "https://slack.com/api/oauth.v2.access",
+    "https://files.slack.com/upload/",
+    "https://oauth2.googleapis.com/token",
+    "https://www.googleapis.com/userinfo/v2/me",
+    "https://www.googleapis.com/oauth2/v3/userinfo",
+    "https://www.googleapis.com/gmail/v1/users",
+    "https://storage.googleapis.com/storage/v1",
+    "https://storage.googleapis.com/upload/storage/v1"
+  ],
+  "executionApi": {
+    "access": "ANYONE"
+  },
+  "webapp": {
+    "executeAs": "USER_DEPLOYING",
+    "access": "ANYONE_ANONYMOUS"
+  }
+}
